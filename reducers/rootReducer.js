@@ -1,14 +1,15 @@
-import channels from './channels'
-import messages from './messages'
-import messageGroups from './messageGroups'
-
-export default (state = {}, action) => {
+export default (state = {numbers:[1,1]}, action) => {
   
   console.log('handling action:', action)
 
-  state.channels = channels(state.channels, action)
-  state.messageGroups = messageGroups(state.messageGroups, action)
-  state.messages = messages(state.messages, action)
- 
+  switch (action.type)
+  {
+    case 'ADD_TO_SEQUENCE':
+      const length = state.numbers.length;
+      const nextNumber = state.numbers[length-1] + state.numbers[length-2]
+      const newState = {numbers: [...state.numbers, nextNumber]}
+      return newState
+  }
+
   return state
 }

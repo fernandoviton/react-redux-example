@@ -20,5 +20,4 @@ store.subscribe(render)
 window.onload = function() 
 {
   render()
-  loadChannels(store, defaultSlackArchivePath)
 }
