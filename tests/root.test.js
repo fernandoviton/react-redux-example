@@ -1,15 +1,15 @@
 import { addToSequence } from '../actions/index.js'
-import rootReducer from '../reducers/rootReducer'
+import root from '../reducers/root'
 
 test('default root state', () => {
-	expect(rootReducer(undefined, {type: undefined})).toEqual(
+	expect(root(undefined, {type: undefined})).toEqual(
 		{
 			numbers: [1, 1]
 		})
 })
 
 test('add to sequence adds next fib number', () => {
-	expect(rootReducer({numbers:[1,1]}, addToSequence())).toEqual(
+	expect(root({numbers:[1,1]}, addToSequence())).toEqual(
 		{
 			numbers: [1,1,2]
 		})
