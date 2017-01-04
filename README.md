@@ -1,12 +1,12 @@
 Initially copied from https://github.com/b52/electron-es6-react
 
-# electron-boilerplate
+# starter-js
 
 A simple boilerplate app to start development of an electron with commonly used modules
 
 ## How?
 
-The main entry point is `boot.js`, which first registers Babel then includes
+The main entry point is `bootstrapper.js`, which first registers Babel then includes
 'main.js'.  This is necessary to allow `main.js` to make use of Babel's features.
 
 The renderer entry point `index.html` does basically the same, but loads the
