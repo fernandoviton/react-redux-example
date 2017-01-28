@@ -1,7 +1,5 @@
 export default (state = {numbers:[1,1]}, action) => {
   
-  console.log('handling action:', action)
-
   switch (action.type)
   {
     case 'ADD_TO_SEQUENCE':

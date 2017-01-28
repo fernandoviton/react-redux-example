@@ -6,8 +6,7 @@ import { addToSequence } from '../actions/index.js'
 export default class Root extends React.Component {
   render() {
     const { store } = this.context;
-    console.log('store on Root render:', store.getState())
-        var key = 0;
+    var key = 0;
 
     return <div>
       <button onClick={() => store.dispatch(addToSequence())}>+</button>
