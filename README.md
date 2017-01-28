@@ -15,8 +15,8 @@ The renderer entry point `index.html` does basically the same, but loads the
 ## Installation
 
 ```bash
-git clone https://github.com/fernandoviton/electron-boilerplate.git
-cd electron-boilerplate
+git clone https://github.com/fernandoviton/starter-js.git
+cd starter-js
 npm install
 npm start
 ```
