@@ -15,6 +15,7 @@ The renderer entry point `index.html` does basically the same, but loads the
 ## Installation
 
 ```bash
+npm install electron -g
 git clone https://github.com/fernandoviton/starter-js.git
 cd starter-js
 npm install
